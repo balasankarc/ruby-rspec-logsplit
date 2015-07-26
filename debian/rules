@@ -16,3 +16,10 @@
 
 %:
 	dh $@ --buildsystem=ruby --with ruby
+
+override_dh_installchangelogs:
+	dh_installchangelogs CHANGES.md
+
+override_dh_clean:
+	rm -rf log
+	dh_clean

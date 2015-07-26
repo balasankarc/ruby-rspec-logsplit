@@ -20,5 +20,7 @@ XB-Ruby-Versions: ${ruby:Versions}
 Depends: ruby | ruby-interpreter,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: Separate the logs between examples to allow for easier understanding
- A new logger for each example
+Description: library to provide a logger for each example
+ This RSpec plugin allows you to change the logger for your library for each 
+ separate example. This gives the ability to see the log output for each 
+ specific test.
